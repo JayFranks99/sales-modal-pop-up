@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME CDN -->
+  <script src="https://kit.fontawesome.com/eea3fcba86.js" crossorigin="anonymous"></script>
+    <title>Modal window</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <img src="flash-sale.svg" />
+      <h6>UP TO 75% OFF!</h6>
+      <div class="coupon-section">
+        <p>USE COUPON CODE:</p>
+        <div id="code-container">
+        <input type="text" value="FLASH15" id="myInput">
+        <div class="tooltip">
+        <button onclick="copyTextFunction()" onmouseout="showToolTip()">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          <i class="fa-solid fa-clone"></i>
+          </button>
+        </div>
+      </div>
+
+      </div>
+      <a href="/shop/"><button class="j-btn">Shop Now</button></a>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+      </head>
+      <body>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
